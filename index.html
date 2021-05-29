@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="styles/style.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="description" content="An API to track your gardening data">
+<meta name="keywords" content="Garden, hydroponic, agriculture, sustainability">
+<meta name="author" content="James Pesta">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hydrata - Home</title>
+</head>
+<body class='body'>
+    <h1>Introduction</h1>
+    <p>Welcome to Hydrata, a hydroponic data tracking app.</p>
+    <p>If this is your first time, you'll need to set up the database. Please click on this 
+        button to do so: <button class="bttn" onclick='window.location.href="install.php"'>Create Database</button></p>
+    <p>This app is designed to keep track of the data for your hydroponic system.
+        Hydrata gives you the fields to track the pH, EC, temperature, and your 
+        additions. Hydrata also keeps track of the seed that you plant. The alerts are 
+        designed to remind you when to plant a new seed.
+    </p>
+    <p>
+        There is a section below the data entry and the calendar. This will not display on 
+        mobile devices. This is because the amount of data visualized will not fit on a screen 
+        too small. Additionally, for data and record keeping, the desktop user will find editing 
+        any data easier to do on a desktop device. In case any errors have been made, the desktop 
+        version will also produce easier methods to change the data.
+    </p>
+    <p>
+        A note about the calendar. In this release, it is linked to Google Calendar through an API, which is 
+        tied to my personal calendar. This has limited features for installing, and the full release will not 
+        include Google calendar and instead will have a built in calendar system, making this product self-reliant.
+    </p>
+    <p>
+        If you have any comments, questions, suggestions, or concerns, please email me at <a href="mailto:jamesmapesta@gmail.com">jamesmapesta@gmail.com</a>
+    </p>
+    <p>Select which database you want to connect to:</p>
+    <button class="bttn" onclick='window.location.href="crop-data.php"'>Crop Data</button>
+    <button class="bttn" onclick='window.location.href="seed-data.php"'>Seed Data</button>
+</body>
+</html>
