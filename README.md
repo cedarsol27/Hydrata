@@ -9,3 +9,5 @@ jQuery, and CSS. There may be other versions in the future intended for commerci
 
 There will be further updates including a better internal calendar (no API), data to represent optimal chemical analysis, harvest times, and perhaps expand 
 for soil farming and regions. Additionally, the CSS and design layout may be improved as well.
+
+To view the current released version in action, please visit doublevisionweb.tech/site/crop. NOTE: This is a personal server. Please be advised that you will have to allow access from your browser.
