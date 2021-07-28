@@ -28,10 +28,9 @@
     left: 50%;
     top: 5%;
     transform: translate(-50%, 5%);
-    border: 3px solid #999999;
     z-index: 9;
     box-shadow: 20px 20px 20px #000;
-    width: 300px;;
+    width: 285px;
   }
 
   .formContainer {

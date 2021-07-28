@@ -1,9 +1,10 @@
 <?php
+/*=================== Connect to database =================== */
 
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbase = 'crop_data';
+$dbase = 'hydrata';
 
 $conn = mysqli_connect($host, $user, $password, $dbase);
 if ($conn === false) {

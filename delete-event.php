@@ -2,17 +2,14 @@
 
 require_once 'connect.php';
 
-$id = $_POST['editData'];
 $delCal = $_GET['id'];
-$query = "DELETE FROM bath_info WHERE 'dataID' = '$delCal'";
+$query = "DELETE FROM reminders WHERE id = $delCal";
 $result = mysqli_query($conn, $query);
 
 if (mysqli_query($conn, $result)) {
-    mysqli_close($conn);
-
     // change confirmation 
-
-    header("Location: confirm.html");
+    echo '<script>alert("Data removed successfully!</script>';
+    header("Location: home.php");
 }
 
 else {

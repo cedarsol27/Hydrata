@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login - Hydrata</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<div class="login">
+		<h1>New User</h1>
+		<form id="signup_form" action="new-user.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+				<label for="firstname">First Name: </label>
+				<input type="text" name="firstname" placeholder="First Name" id="firstname" required/><br/> 
+				<label for="lastname">Last Name: </label>
+				<input type="text" name="lastname" placeholder="Last Name" id="lastname" /><br/> 
+				<label for="username">Create a user name: </label>
+				<input type="text" pattern=".{4,}" title="Username must contain four ot more characters"
+					name="username" placeholder="Username" id="username" required/><br>
+				<label for="email">Enter your email: </label>
+				<input type="text" name="email" placeholder="Email" id="email" required/><br>
+				<label for="password">Create password: </label>
+				<input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+					title="Password must contain at least one number, one uppercase and lowercase letter, and at least 6 characters"
+					placeholder="Password" id="password" required/><br>
+				<div class="password-meter-message">
+					<div class="password-meter-message"></div>
+					<div class="password-meter-bg">
+						<div class="password-meter-bar"></div>
+					</div>
+				</div>
+				<label for="confirm_password">Re-type password: </label>
+				<input type="password" name="confirm_password" placeholder="Password" id="confirm_password" required/><br>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

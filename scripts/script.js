@@ -28,3 +28,33 @@
             $("#dataForm").fadeToggle();
         })
     });
+
+
+    /*
+    $(document).ready(function() {
+        $('chngForm').on('click', function() {
+            var bath = $('#crop').val();
+
+            $.ajax({
+                url: "bath-add.php",
+                type: "POST",
+                data: {
+                    bath: bath,
+                    dateCheck: dateCheck,
+                    air: air,
+                    water: water,
+                    phbefore: phbefore,
+                    phafter: phafter,
+                    ec: ec,
+                    comment: comment
+                },
+                cache: false,
+                success: function(dataResult) {
+                    $("adddata").removeAttr("disabled");
+                    $("bathForm").find('input:text').val("");
+                    $("#success").show();
+                    $("#success").html("Data added successfully!");
+                }
+            });
+        });
+    });*/
